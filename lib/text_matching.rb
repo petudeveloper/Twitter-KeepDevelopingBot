@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 @open_source_matching = ['open source', 'opensource', 'free', 'Richard Stallman', 'RMS', 'non-proprietary', 'software',
                          'FOSS']
 

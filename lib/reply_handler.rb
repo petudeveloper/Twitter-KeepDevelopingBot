@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 require_relative 'text_matching'
 
 module ReplyHandler

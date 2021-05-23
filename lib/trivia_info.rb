@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 # rubocop:disable Layout/LineLength
 
 @opensource_hash = { 'OS1' => '"Sharing knowledge is the most fundamental act of friendship. Because it is a way you can give something without loosing something." ~ Richard Stallman',
