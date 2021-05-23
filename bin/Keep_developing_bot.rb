@@ -1,4 +1,5 @@
 #!/usr/bin/env ruby
+# rubocop:disable Layout/LineLength
 
 require 'rubygems'
 require 'chatterbot/dsl'
@@ -56,3 +57,4 @@ loop do
   sleep 60
   ilustrate_post_counter += 1
 end
+# rubocop:enable Layout/LineLength
