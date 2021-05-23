@@ -11,7 +11,7 @@ module TriviaPicker
 
     @opensource_quote = hash.values.to_a.sample
     @opensource_quote_num = hash.key(@opensource_quote)
-    opensource_quote_block = [@opensource_quote_num, @opensource_quote].to_h
+    opensource_quote_block = {@opensource_quote_num => @opensource_quote}
     @opensource_history.merge!(opensource_quote_block)
     @opensource_hash.delete(@opensource_quote_num)
   end
@@ -26,7 +26,7 @@ module TriviaPicker
 
     @motivate_quote = hash.values.to_a.sample
     @motivate_quote_num = hash.key(@motivate_quote)
-    motivate_quote_block = [@motivate_quote_num, @motivate_quote].to_h
+    motivate_quote_block = {@motivate_quote_num => @motivate_quote}
     @motivate_history.merge!(motivate_quote_block)
     @motivate_hash.delete(@motivate_quote_num)
   end
@@ -41,7 +41,7 @@ module TriviaPicker
 
     @inspire_quote = hash.values.to_a.sample
     @inspire_quote_num = hash.key(@inspire_quote)
-    inspire_quote_block = [@inspire_quote_num, @inspire_quote].to_h
+    inspire_quote_block = {@inspire_quote_num => @inspire_quote}
     @inspire_history.merge!(inspire_quote_block)
     @inspire_hash.delete(@inspire_quote_num)
   end
@@ -55,7 +55,7 @@ module TriviaPicker
     end
     @ilustrate_quote = hash.values.to_a.sample
     @ilustrate_quote_num = hash.key(@ilustrate_quote)
-    ilustrate_quote_block = [@ilustrate_quote_num, @ilustrate_quote].to_h
+    ilustrate_quote_block = {@ilustrate_quote_num => @ilustrate_quote}
     @ilustrate_history.merge!(ilustrate_quote_block)
     @ilustrate_hash.delete(@ilustrate_quote_num)
   end
