@@ -40,9 +40,7 @@ loop do
       favorite(tweet)
 
     else
-      reply(
-        '#USER# the only important thing is that I am here to try to help you.', tweet
-      )
+      reply('#USER# the only important thing is that I am here to try to help you.', tweet)
     end
   end
 
