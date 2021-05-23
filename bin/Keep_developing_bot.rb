@@ -9,10 +9,10 @@ require_relative '../lib/tweets_handler'
 # this is the script for the twitter @petudeveloper
 # generated on 2021-05-21 18:37:05 -0300
 
-consumer_key 'Uvcg7OJJKMMiD35DE3SoEV2L1'
-consumer_secret 'lwwcr70ibPxiWREuXPb1BElTEsxEBDzh1GOqMf6UatSrMjutIp'
-secret 'ETiATkIVT9V00T8Li4hgkq7VTo5xh8QpBx7PQqnrhdQI0'
-token '1367668720152289285-d92tiOiVAdvwx5Aj2C2oB758tUmf6i'
+consumer_key 'Insert your key here'
+consumer_secret 'Insert your key here'
+secret 'Insert your key here'
+token 'Insert your key here'
 
 ilustrate_post_counter = 0
 
