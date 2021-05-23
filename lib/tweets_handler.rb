@@ -1,4 +1,3 @@
-# rubocop:disable Style/Documentation
 require_relative 'trivia_info'
 
 module TriviaPicker
@@ -61,4 +60,3 @@ module TriviaPicker
     @ilustrate_hash.delete(@ilustrate_quote_num)
   end
 end
-# rubocop:enable Style/Documentation
