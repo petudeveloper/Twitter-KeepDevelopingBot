@@ -9,17 +9,16 @@ require_relative '../lib/tweets_handler'
 # this is the script for the twitter @petudeveloper
 # generated on 2021-05-21 18:37:05 -0300
 
-consumer_key 'put your info here'
-consumer_secret 'put your info here'
-secret 'put your info here'
-token 'put your info here'
-
-include TriviaPicker
-include ReplyHandler
+consumer_key 'Uvcg7OJJKMMiD35DE3SoEV2L1'
+consumer_secret 'lwwcr70ibPxiWREuXPb1BElTEsxEBDzh1GOqMf6UatSrMjutIp'
+secret 'ETiATkIVT9V00T8Li4hgkq7VTo5xh8QpBx7PQqnrhdQI0'
+token '1367668720152289285-d92tiOiVAdvwx5Aj2C2oB758tUmf6i'
 
 ilustrate_post_counter = 0
 
 loop do
+  include TriviaPicker
+  include ReplyHandler
   replies do |tweet|
     if empty_help?(tweet)
       reply("#USER# this is a list of what petudeveloperBot can do for you \n - Talk about OpenSource.  \n - Motivate you. \n - Inspire you. \n - Ilustrate you.", tweet)
@@ -47,12 +46,12 @@ loop do
     end
   end
 
-  if ilustrate_post_counter == 720
+  if ilustrate_post_counter == 1440
     ilustrate_quote_sorter
     tweet("#{@ilustrate_quote_num} Did you know?: #{@ilustrate_quote}")
     ilustrate_post_counter = 0
   end
-  sleep 60
+  sleep 30
   ilustrate_post_counter += 1
 end
 # rubocop:enable Layout/LineLength
