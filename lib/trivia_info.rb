@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+# rubocop:disable Layout/LineLength
+
 @opensource_hash = { 'OS1' => '"Sharing knowledge is the most fundamental act of friendship. Because it is a way you can give something without loosing something." ~ Richard Stallman',
                      'OS2' => '"Programming is not a science. Programming is a craft." ~ Richard Stallman',
                      'OS3' => '"I did write some code in Java once, but that was the island in Indonesia." ~ Richard Stallman',
@@ -89,3 +91,5 @@
 @motivate_history = {}
 @inspire_history = {}
 @ilustrate_history = {}
+
+# rubocop:enable Layout/LineLength
