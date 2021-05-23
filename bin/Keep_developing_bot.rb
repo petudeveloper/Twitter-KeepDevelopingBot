@@ -3,16 +3,17 @@
 
 require 'rubygems'
 require 'chatterbot/dsl'
+require 'dotenv/load'
 require_relative '../lib/reply_handler'
 require_relative '../lib/tweets_handler'
 
 # this is the script for the twitter @petudeveloper
 # generated on 2021-05-21 18:37:05 -0300
 
-consumer_key 'Insert your key here'
-consumer_secret 'Insert your key here'
-secret 'Insert your key here'
-token 'Insert your key here'
+consumer_key ENV['KEY1']
+consumer_secret ENV['KEY2']
+secret ENV['KEY3']
+token ENV['KEY4']
 
 ilustrate_post_counter = 0
 
