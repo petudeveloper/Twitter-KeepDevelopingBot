@@ -22,9 +22,7 @@ ilustrate_post_counter = 0
 loop do
   replies do |tweet|
     if empty_help?(tweet)
-      reply(
-        "#USER# this is a list of what petudeveloperBot can do for you \n - Talk about OpenSource.  \n - Motivate you. \n - Inspire you. \n - Ilustrate you.", tweet
-      )
+      reply("#USER# this is a list of what petudeveloperBot can do for you \n - Talk about OpenSource.  \n - Motivate you. \n - Inspire you. \n - Ilustrate you.", tweet)
       favorite(tweet)
 
     elsif opensource?(tweet)
