@@ -38,10 +38,10 @@ To get a local copy up and run the program do these steps on the console:
 ## Example of the bot Working
 
 ### Replies to `empty` tweet
-![screenshot](./readme_lib/screenshot1.png)
+![screenshot](./readme_lib/screenshot2.png)
 
 ### Replies when `motivate` tweet
-![screenshot](./readme_lib/screenshot2.png)
+![screenshot](./readme_lib/screenshot1.png)
 
 
 ## Authors
