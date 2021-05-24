@@ -32,7 +32,7 @@ loop do
 
     elsif motivate?(tweet)
       motivate_quote_sorter
-      reply("#USER#! Never surrender: #{@motivate_quote_num} #{@motivate_quote}", tweet)
+      reply("#USER# Never surrender!: #{@motivate_quote_num} #{@motivate_quote}", tweet)
       favorite(tweet)
 
     elsif inspire?(tweet)
