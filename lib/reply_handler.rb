@@ -4,7 +4,7 @@ module ReplyHandler
   def empty_help?(tweet)
     raise ScriptError.new, 'Only Tweet-Object in #empty_help' if tweet.is_a?(Array)
 
-    ['help', 'what can you do', 'assistance', 'aid', 'support'].each do |i|
+    @help_source_matching.each do |i|
       return true if /\b#{i}\b/i.match?(tweet.text) || tweet.text == '@petudeveloper'
     end
     false
