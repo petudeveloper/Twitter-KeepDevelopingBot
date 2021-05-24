@@ -1,11 +1,12 @@
+# rubocop:disable Layout/LineLength
+
 require_relative 'spec_helper'
 require_relative '../lib/reply_handler'
 require_relative '../lib/text_matching'
 
-
 class Tweet
   attr_reader :text, :id
-  
+
   def initialize(text, id)
     @text = text
     @id = id
@@ -37,7 +38,7 @@ describe '#opensource?' do
   include ReplyHandler
   before do
     @help_source_matching = @open_source_matching = ['open source', 'opensource', 'free', 'Richard Stallman', 'RMS', 'non-proprietary', 'software',
-      'FOSS']
+                                                     'FOSS']
   end
   let(:tweet) { Tweet.new('Say something about opensource', 0o0000000001) }
   let(:tweet2) { Tweet.new('hello dude', 0o0000000001) }
@@ -59,7 +60,7 @@ describe '#motivate?' do
   include ReplyHandler
   before do
     @motivate_source_matching = %w[motivate sad encourage vitalize cheer positive negative actitud
-      pressure unmotivated happy unfortunate lifeless]
+                                   pressure unmotivated happy unfortunate lifeless]
   end
   let(:tweet) { Tweet.new('motivate me please', 0o0000000001) }
   let(:tweet2) { Tweet.new('hello dude', 0o0000000001) }
@@ -81,7 +82,7 @@ describe '#inspire?' do
   include ReplyHandler
   before do
     @inspire_source_matching = ['inspire', 'stimulate', 'persuade', 'energize', 'work', 'programming', 'hard work', 'lazy',
-      'work-shy', 'inactive', 'active', 'shiftless', 'indolent', 'spiritless', 'passive']
+                                'work-shy', 'inactive', 'active', 'shiftless', 'indolent', 'spiritless', 'passive']
   end
   let(:tweet) { Tweet.new('I am feeling lazy, inspire me!', 0o0000000001) }
   let(:tweet2) { Tweet.new('hello dude', 0o0000000001) }
@@ -98,3 +99,5 @@ describe '#inspire?' do
     expect { inspire?(arr) }.to raise_error(ScriptError)
   end
 end
+
+# rubocop:enable Layout/LineLength
