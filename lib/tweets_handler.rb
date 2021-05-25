@@ -1,6 +1,7 @@
 require_relative 'trivia_info'
 
 module TriviaPicker
+  
   private
   
   def opensource_quote_sorter(hash = @opensource_hash)
