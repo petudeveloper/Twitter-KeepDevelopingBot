@@ -20,13 +20,16 @@ The bot checks for and replies/fav every 30 seconds.
 ## Getting Started
 
 To get a local copy up and run the program do these steps on the console:
-- To clone the project to your machine, run `git clone https://github.com/petumazo/KeepDevelopingBot.git`
-- To navigate into the project folder/directory, run `cd KeepDevelopingBot/bin`.
-- To run the executable creator, run `gem install ocra` and then `ocra Keep_developing_bot.rb`
-- To go back one folder run `cd ..`
-- To install the required dependencies, run `bundle install`.
-- **For it to run you'll have to get your _Token, Secret Toke, Consumer Key_ and _Consumer_Secret_ to connect with Twitter API and paste that information in the field with those names.
+- To clone the project to your machine, run `git clone https://github.com/petumazo/KeepDevelopingBot.git`.
+- To install the required dependencies, run `bundle install`. 
+- For it to run you'll have to get your _Token, Secret Toke, Consumer Key_ and _Consumer_Secret_, if you don´t know-how, you can check the [official twitter guide](https://developer.twitter.com/ja/docs/basics/authentication/guides/access-tokens) on how to get your access tokens. 
+- If you're still confused and you don´t know how to generate your access tokens follow these steps:
+  - Login to your Twitter account on [Twitter Developer](developer.twitter.com) and ask for access to Twitter API, follow this [video tutorial] (https://www.youtube.com/watch?v=vlvtqp44xoQ) if you feel confused.
+  - Navigate to the [Twitter app dashboard](https://developer.twitter.com/en/apps) and open the Twitter app for which you would like to generate access tokens.
+  - Navigate to the "Keys and Tokens" page.
+  - Select 'Create' under the "Access token & access token secret" section.
 - To run the bot, run `bin/Keep_developing_bot.rb` in the console.
+- Remember (_To generate your access token and secret, you must have a Twitter app. You will need to register an application with Twitter. Twitter requires all API communication to be via an app which is registered on Twitter._)
 
 - To run RSpec:
   - run 'gem install rspec' on your console from the root directory
