@@ -62,4 +62,5 @@ module TriviaPicker
     @ilustrate_history.merge!(ilustrate_quote_block)
     @ilustrate_hash.delete(@ilustrate_quote_num)
   end
+
 end
