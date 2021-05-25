@@ -1,7 +1,6 @@
 require_relative 'trivia_info'
 
 module TriviaPicker
-
   private
 
   def opensource_quote_sorter(hash = @opensource_hash)
@@ -62,5 +61,4 @@ module TriviaPicker
     @ilustrate_history.merge!(ilustrate_quote_block)
     @ilustrate_hash.delete(@ilustrate_quote_num)
   end
-
 end
