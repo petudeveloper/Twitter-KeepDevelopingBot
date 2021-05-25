@@ -2,6 +2,7 @@ require_relative 'trivia_info'
 
 module TriviaPicker
   private
+  
   def opensource_quote_sorter(hash = @opensource_hash)
     raise ScriptError.new, 'Only hashes in opensource_quote_sorter' unless hash.is_a?(Hash)
 
