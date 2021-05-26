@@ -1,4 +1,3 @@
-# frozen_string_literal: false
 require_relative 'trivia_info'
 
 # TriviaPicker methods are created to have a track of the elements on trivia_info that have been already tweet.
