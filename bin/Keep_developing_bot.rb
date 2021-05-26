@@ -1,5 +1,4 @@
 #!/usr/bin/env ruby
-# rubocop:disable Layout/LineLength
 
 require 'rubygems'
 require 'chatterbot/dsl'
@@ -22,7 +21,7 @@ loop do
   include ReplyHandler
   replies do |tweet|
     if empty_help?(tweet)
-      reply("#USER# this is a list of what petudeveloperBot can do for you \n - Talk about OpenSource.  \n - Motivate you. \n - Inspire you. \n - Ilustrate you.", tweet)
+      reply("#USER# We can talk about \n -Open Source.  \n - Motivate you. \n - Inspire you. \n - Ilustrate you.", tweet)
       favorite(tweet)
 
     elsif opensource?(tweet)
@@ -53,4 +52,3 @@ loop do
   sleep 30
   ilustrate_post_counter += 1
 end
-# rubocop:enable Layout/LineLength
