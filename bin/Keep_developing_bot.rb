@@ -21,7 +21,7 @@ loop do
   include ReplyHandler
   replies do |tweet|
     if empty_help?(tweet)
-      reply("#USER# We can talk about \n -Open Source. \n - Motivate you. \n - Inspire you. \n - Ilustrate you.", tweet)
+      reply("#USER# We can talk about \n -OpenSource. \n -Motivate you. \n -Inspire you. \n -Ilustrate you.", tweet)
       favorite(tweet)
 
     elsif opensource?(tweet)
