@@ -43,12 +43,15 @@ loop do
       reply('#USER# the only important thing is that I am here to try to help you.', tweet)
     end
   end
+  sleep 15
+end
 
+loop do
   if ilustrate_post_counter == 1440
     ilustrate_quote_sorter
     tweet("#{@ilustrate_quote_num} Did you know?: #{@ilustrate_quote}")
     ilustrate_post_counter = 0
   end
-  sleep 30
+  sleep 15
   ilustrate_post_counter += 1
 end
