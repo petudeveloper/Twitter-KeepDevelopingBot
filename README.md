@@ -20,7 +20,7 @@ The bot checks for and replies/fav every 30 seconds.
 ## Getting Started
 
 To get a local copy up and run the program do these steps on the console:
-- To clone the project to your machine, run `git clone https://github.com/petumazo/KeepDevelopingBot.git`.
+- To clone the project to your machine, run `git clone https://github.com/petumazo/Twitter-KeepDevelopingBot.git`.
 - To install the required dependencies, run `bundle install`. 
 - For it to run you'll have to get your _Token, Secret Toke, Consumer Key_ and _Consumer_Secret_, if you don´t know-how, you can check the [official twitter guide](https://developer.twitter.com/ja/docs/basics/authentication/guides/access-tokens) on how to get your access tokens. 
 - If you're still confused and you don´t know how to generate your access tokens follow these steps:
